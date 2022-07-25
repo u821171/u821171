@@ -23,7 +23,7 @@ param allowedSourceIPAddress string = '0.0.0.0/0'
 param domainControllerName string = 'DC01'
 
 @description('Name for the workstation virtual machine.')
-param workstationName string = 'WS01'
+param workstationName string = 'WS021'
 
 @description('Size for both the domain controller and workstation virtual machines.')
 @allowed([

@@ -18,14 +18,14 @@
     },
     "virtualNetworkName": {
       "type": "string",
-      "defaultValue": "VNET",
+      "defaultValue": "DomainServicesVnet",
       "metadata": {
         "description": "Name for the virtual network."
       }
     },
     "virtualNetworkAddressSpace": {
       "type": "string",
-      "defaultValue": "10.0.0.0/16",
+      "defaultValue": "10.101.32.0/23",
       "metadata": {
         "description": "Address space for the virtual network, in IPv4 CIDR notation."
       }
@@ -39,7 +39,7 @@
     },
     "subnetAddressRange": {
       "type": "string",
-      "defaultValue": "10.0.0.0/24",
+      "defaultValue": "10.101.33.0/25",
       "metadata": {
         "description": "Address range for the default subnet, in IPv4 CIDR notation."
       }
@@ -53,7 +53,7 @@
     },
     "domainControllerName": {
       "type": "string",
-      "defaultValue": "DC01",
+      "defaultValue": "AZVMCANARYDC01",
       "metadata": {
         "description": "Name for the domain controller virtual machine."
       }
@@ -78,7 +78,7 @@
     },
     "domainFQDN": {
       "type": "string",
-      "defaultValue": "contoso.com",
+      "defaultValue": "yellowbird.uk.ad",
       "maxLength": 255,
       "minLength": 3,
       "metadata": {
@@ -87,7 +87,7 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "BlueTeamLab",
+      "defaultValue": "systemuser",
       "maxLength": 20,
       "minLength": 1,
       "metadata": {
